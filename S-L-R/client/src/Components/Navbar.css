@@ -1,0 +1,87 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.website-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Menu Toggle Button (Hamburger Icon) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Hide the navbar links */
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    /* Show menu when active */
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    /* Show the menu toggle button */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Styling for nav links in the dropdown */
+    .navbar-menu .nav-link {
+        padding: 10px 0;
+        border-bottom: 1px solid #555;
+        color: #fff;
+        text-align: right;
+    }
+
+    .navbar-menu .nav-link:last-child {
+        border-bottom: none;
+    }
+}

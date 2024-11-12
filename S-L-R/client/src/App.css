@@ -1,0 +1,221 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('./images/background_main_page.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Section styling */
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.header-section h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  background: #555;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-button:hover {
+  background: #333;
+}
+
+/* Movie list sections */
+.section-title {
+  font-size: 2rem;
+  color: #f8f9fa;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-slider-vertical {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card-vertical {
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.movie-card-vertical:hover {
+  transform: scale(1.05);
+}
+
+.movie-card-vertical img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  padding: 10px;
+}
+
+.movie-info h5 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Horizontal movie slider */
+.movie-slider-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.movie-card-horizontal {
+  width: 200px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.movie-card-horizontal:hover {
+  transform: scale(1.05);
+}
+
+.movie-card-horizontal img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  color: #bbb;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Design */
+
+/* Small screens (tablets, large phones) */
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .movie-slider-vertical {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .movie-card-vertical, .movie-card-horizontal {
+    width: 100%;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .header-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-section p {
+    font-size: 1rem;
+  }
+
+  .search-button {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+
+  .movie-slider-vertical {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .movie-card-vertical img, .movie-card-horizontal img {
+    height: 150px;
+  }
+
+  .movie-info h5 {
+    font-size: 1rem;
+  }
+
+  .movie-info p {
+    font-size: 0.9rem;
+  }
+}

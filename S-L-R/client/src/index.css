@@ -1,0 +1,141 @@
+/* Root font size */
+:root {
+  font-size: 16px; /* Adjust this to control the base size */
+}
+
+/* Main font and background styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('../images/BG1111.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Main form container */
+.form-container {
+  background: rgba(0, 0, 0, 0.7); /* Darker, cinematic background */
+  padding: 1.875rem; /* 30px */
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 4px 8px */
+  width: 21.875rem; /* 350px */
+  text-align: center;
+}
+
+/* Logo container */
+.logo-container {
+  position: absolute;
+  top: 1.25rem; /* 20px */
+  right: 1.25rem; /* 20px */
+  display: flex;
+  align-items: center;
+}
+
+.logo-container p {
+  color: #ff3b3b;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-right: 0.625rem; /* 10px */
+}
+
+.logo-container img {
+  width: 11.25rem; /* 180px */
+  height: auto;
+}
+
+/* Form labels and input fields */
+.form-group label {
+  font-weight: bold;
+  color: #bbb;
+  display: block;
+  text-align: left;
+}
+
+.form-control {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3125rem; /* 5px */
+}
+
+.form-control:focus {
+  background-color: #333;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Buttons styling */
+.btn-primary,
+.btn-secondary {
+  width: 100%;
+  padding: 0.625rem; /* 10px */
+  margin-top: 0.625rem; /* 10px */
+  font-weight: bold;
+  border-radius: 0.3125rem; /* 5px */
+  border: none;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Account creation text and link */
+.create-account {
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-top: 0.625rem; /* 10px */
+  text-decoration: none;
+}
+
+.create-account a {
+  color: #ff3b3b;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 48rem) { /* 768px */
+  .form-container {
+    width: 18.75rem; /* 300px */
+    padding: 1.25rem; /* 20px */
+  }
+  
+  .logo-container p {
+    font-size: 0.8rem;
+    margin-right: 0.5rem; /* 8px */
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.5rem; /* 8px */
+  }
+}
+
+@media (max-width: 30rem) { /* 480px */
+  .form-container {
+    width: 15rem; /* 240px */
+    padding: 1rem; /* 16px */
+  }
+  
+  .logo-container p {
+    font-size: 0.75rem;
+    margin-right: 0.5rem; /* 8px */
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.5rem; /* 8px */
+  }
+}

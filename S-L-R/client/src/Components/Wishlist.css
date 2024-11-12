@@ -1,0 +1,134 @@
+/* Root font size for responsiveness */
+:root {
+    font-size: 16px; /* Default base font size */
+  }
+  
+  /* General page styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Wishlist container */
+  .wishlist {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Back button styling */
+  .back-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .back-button p {
+    color: #fff;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .back-button p:hover {
+    background-color: #555;
+  }
+  
+  /* Wishlist title */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Wishlist grid */
+  .wishlist-movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* responsive grid */
+    gap: 1.5rem;
+  }
+  
+  /* Movie card styling */
+  .wishlist-movie-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .wishlist-movie-card:hover {
+    transform: translateY(-0.2rem);
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Movie info styling */
+  .movie-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .movie-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .movie-title:hover {
+    color: #ff3b3b;
+  }
+  
+  .movie-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .favorite-icon {
+    color: #ff3b3b;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 48rem) { /* Tablet view (768px) */
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .back-button p {
+      font-size: 0.875rem;
+    }
+  
+    .movie-info p {
+      font-size: 0.875rem;
+    }
+  
+    .wishlist-movie-grid {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 30rem) { /* Mobile view (480px) */
+    h1 {
+      font-size: 1.25rem;
+    }
+  
+    .back-button p {
+      font-size: 0.75rem;
+    }
+  
+    .wishlist-movie-grid {
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+  }
+  

@@ -1,0 +1,132 @@
+/* General Styling */
+.settings-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+    max-width: 80rem; /* 1280px */
+    margin: 1rem auto;
+    background-color: #f5f7fa; /* Light gray background */
+    color: #333;
+  }
+  
+  /* Title Styling */
+  .settings-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark Blue */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Settings List Styling */
+  .settings-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .settings-list li {
+    font-size: 1rem;
+    color: #34495e; /* Dark Grayish Blue */
+    margin-bottom: 1rem;
+  }
+  
+  .settings-list strong {
+    font-weight: bold;
+    color: #2980b9; /* Blue */
+  }
+  
+  /* Button Styling */
+  .settings-button {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.25rem 0.75rem;
+  }
+  
+  .settings-button:hover {
+    background-color: #2980b9; /* Darker Blue */
+  }
+  
+  .toggle-button {
+    background-color: #16a085; /* Light Green for Toggle buttons */
+  }
+  
+  .toggle-button:hover {
+    background-color: #1abc9c; /* Darker Green */
+  }
+  
+  /* Link Container */
+  .link-container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .settings-link {
+    text-decoration: none;
+    color: #3498db; /* Blue */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .settings-link:hover {
+    color: #16a085; /* Green */
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .settings-container {
+      padding: 1rem;
+    }
+  
+    .settings-title {
+      font-size: 1.8rem; /* 28px */
+    }
+  
+    .settings-list li {
+      font-size: 0.875rem; /* 14px */
+    }
+  
+    .settings-button {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .link-container {
+      width: 100%;
+    }
+  
+    .settings-link {
+      font-size: 0.875rem; /* 14px */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .settings-title {
+      font-size: 1.6rem; /* 24px */
+    }
+  
+    .settings-list li {
+      font-size: 0.75rem; /* 12px */
+    }
+  
+    .settings-button {
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .settings-link {
+      font-size: 0.75rem; /* 12px */
+    }
+  }
+  

@@ -7,7 +7,7 @@ import './Home.css';
 const Home = () => {
   // Example movie data array for demonstration
   const movies = [
-    { title: 'Movie 1', genre: 'Comedy/Horror', rating: '7.8/10', poster: 'movie10.png' },
+    { title: 'Movie 1', genre: 'Comedy/Horror', rating: '7.8/10', poster: import("../assets/images/movie10.png")},
     { title: 'Movie 2', genre: 'Drama/Action', rating: '8.5/10', poster: 'movie11.png' },
     { title: 'Movie 3', genre: 'Romance/Drama', rating: '6.5/10', poster: 'movie12.png' },
     { title: 'Movie 4', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: 'movie13.png' },

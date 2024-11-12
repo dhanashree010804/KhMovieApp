@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Profile.css';
+import logo from '../assets/image/logo.png';
 
 const Profile = () => {
   return (
@@ -9,7 +10,7 @@ const Profile = () => {
       {/* Header */}
       <div className="header">
         <div className="brand-title">CINESCOPE</div>
-        <img src="/images/logo.png" alt="CINESCOPE Logo" className="logo" />
+        <img src={logo} alt="CINESCOPE Logo" className="logo" />
       </div>
 
       {/* Profile Box */}

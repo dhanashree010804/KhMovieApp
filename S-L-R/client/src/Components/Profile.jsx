@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Profile.css';
-import logo from '../assets/image/logo.png';
+import logo from "../assets/images/logo.png";
 
 const Profile = () => {
   return (

@@ -65,7 +65,7 @@ const Home = () => {
         <div className="movie-slider-vertical">
           {movies.map((movie, index) => (
             <Link to="/review" key={index} className="movie-card-vertical">
-              <img src={`assets/images/${movie.poster}`} alt="Movie Poster" className="movie-poster" />
+              <img src={movie.poster} alt="Movie Poster" className="movie-poster" />
               <div className="movie-info">
                 <h5>{movie.title}</h5>
                 <p>Genre: {movie.genre}<br />Rating: ★ {movie.rating}</p>

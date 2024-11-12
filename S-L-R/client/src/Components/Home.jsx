@@ -1,4 +1,8 @@
 import movie10 from "../assets/images/movie10.png";
+import movie11 from "../assets/images/movie11.png";
+import movie12 from "../assets/images/movie12.png";
+import movie13 from "../assets/images/movie13.png";
+import movie14 from "../assets/images/movie14.png";
 
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,15 +14,15 @@ const Home = () => {
   // Example movie data array for demonstration
   const movies = [
     { title: 'Movie 1', genre: 'Comedy/Horror', rating: '7.8/10', poster: movie10},
-    { title: 'Movie 2', genre: 'Drama/Action', rating: '8.5/10', poster: 'movie11.png' },
-    { title: 'Movie 3', genre: 'Romance/Drama', rating: '6.5/10', poster: 'movie12.png' },
-    { title: 'Movie 4', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: 'movie13.png' },
-    { title: 'Movie 5', genre: 'Action/Thriller', rating: '9.0/10', poster: 'movie14.png' },
-    { title: 'Movie 6', genre: 'Comedy/Horror', rating: '7.8/10', poster: 'movie10.png' },
-    { title: 'Movie 7', genre: 'Drama/Action', rating: '8.5/10', poster: 'movie11.png' },
-    { title: 'Movie 8', genre: 'Romance/Drama', rating: '6.5/10', poster: 'movie12.png' },
-    { title: 'Movie 9', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: 'movie13.png' },
-    { title: 'Movie 10', genre: 'Romance/Drama', rating: '6.5/10', poster: 'movie12.png' },
+    { title: 'Movie 2', genre: 'Drama/Action', rating: '8.5/10', poster: movie11 },
+    { title: 'Movie 3', genre: 'Romance/Drama', rating: '6.5/10', poster: movie12 },
+    { title: 'Movie 4', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: movie13 },
+    { title: 'Movie 5', genre: 'Action/Thriller', rating: '9.0/10', poster: movie14 },
+    { title: 'Movie 6', genre: 'Comedy/Horror', rating: '7.8/10', poster: movie10 },
+    { title: 'Movie 7', genre: 'Drama/Action', rating: '8.5/10', poster: movie11  },
+    { title: 'Movie 8', genre: 'Romance/Drama', rating: '6.5/10', poster: movie12 },
+    { title: 'Movie 9', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: movie13 },
+    { title: 'Movie 10', genre: 'Romance/Drama', rating: '6.5/10', poster: movie12 },
   ];
 
   // State to track favorites
@@ -90,7 +94,7 @@ const Home = () => {
         <div className="movie-slider-horizontal">
           {movies.map((movie, index) => (
             <Link to="/review" key={index} className="movie-card-horizontal">
-              <img src={`images/${movie.poster}`} alt="Movie Poster" className="movie-poster" />
+              <img src={movie.poster} alt="Movie Poster" className="movie-poster" />
               <div className="movie-info">
                 <h5>{movie.title}</h5>
                 <p>Genre: {movie.genre}<br />Rating: ★ {movie.rating}</p>

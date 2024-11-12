@@ -6,7 +6,7 @@
 /* Main font and background styling */
 body {
   font-family: Arial, sans-serif;
-  background: url('../images/BG1111.png') no-repeat center center fixed;
+  background: url('assets/images/BG1111.png') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   display: flex;

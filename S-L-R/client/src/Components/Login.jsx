@@ -59,7 +59,7 @@ const Login = () => {
     };
 
     return (
-        <div className="form-container">
+        <div className="form-container" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div className="logo-container">
                 <div>
                     <h1>CINESCOPE</h1>

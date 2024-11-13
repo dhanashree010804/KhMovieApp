@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Profile.css';
 import logo from "../assets/images/logo.png";
-import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/BG1.jpg";
 import movie1 from "../assets/images/movie2.png";
 import movie2 from "../assets/images/movie7.png";
 import movie3 from "../assets/images/movie8.png";

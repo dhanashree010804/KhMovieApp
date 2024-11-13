@@ -1,3 +1,9 @@
+import movie10 from "../assets/images/movie10.png";
+import movie11 from "../assets/images/movie11.png";
+import movie12 from "../assets/images/movie12.png";
+import movie13 from "../assets/images/movie13.png";
+import movie14 from "../assets/images/movie14.png";
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,11 +21,11 @@ const Wishlist = () => {
 
   // Example data for movies
   const movies = [
-    { title: 'Movie 1', genre: 'Comedy/Horror', rating: '7.8/10', poster: 'movie10.png' },
-    { title: 'Movie 2', genre: 'Drama/Action', rating: '8.5/10', poster: 'movie11.png' },
-    { title: 'Movie 3', genre: 'Romance/Drama', rating: '6.5/10', poster: 'movie12.png' },
-    { title: 'Movie 4', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: 'movie13.png' },
-    { title: 'Movie 5', genre: 'Action/Thriller', rating: '9.0/10', poster: 'movie14.png' },
+    { title: 'Movie 1', genre: 'Comedy/Horror', rating: '7.8/10', poster: movie10 },
+    { title: 'Movie 2', genre: 'Drama/Action', rating: '8.5/10', poster: movie11 },
+    { title: 'Movie 3', genre: 'Romance/Drama', rating: '6.5/10', poster: movie12 },
+    { title: 'Movie 4', genre: 'Sci-Fi/Fantasy', rating: '8.2/10', poster: movie13 },
+    { title: 'Movie 5', genre: 'Action/Thriller', rating: '9.0/10', poster: movie14 },
   ];
 
   // Filter to display only favorited movies with poster and title
@@ -42,7 +48,7 @@ const Wishlist = () => {
           {favoriteMovies.map((movie, index) => (
             <div key={index} className="wishlist-movie-card">
               <img 
-                src={`images/${movie.poster}`} 
+                src={movie.poster} 
                 alt={`${movie.title} Poster`} 
                 className="movie-poster" 
               />

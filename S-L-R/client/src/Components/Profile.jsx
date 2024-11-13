@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './Profile.css';
 import logo from "../assets/images/logo.png";
 import profile from "../assets/images/profile.jpg";
-import movie1 form "../assets/images/movie2.png";
-import movie2 form "../assets/images/movie7.png";
-import movie3 form "../assets/images/movie8.png";
-import movie4 form "../assets/images/movie6.png";
-import movie5 form "../assets/images/movie6.png";
-import movie6 form "../assets/images/movie9.png";
+import movie1 from "../assets/images/movie2.png";
+import movie2 from "../assets/images/movie7.png";
+import movie3 from "../assets/images/movie8.png";
+import movie4 from "../assets/images/movie6.png";
+import movie5 from "../assets/images/movie6.png";
+import movie6 from "../assets/images/movie9.png";
   
 
 const Profile = () => {

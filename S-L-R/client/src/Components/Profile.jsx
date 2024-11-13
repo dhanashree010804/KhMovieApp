@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Profile.css';
 import logo from "../assets/images/logo.png";
+import profile from "../assets/images/profile.jpg";
+import movie1 form "../assets/images/movie2.png";
+import movie2 form "../assets/images/movie7.png";
+import movie3 form "../assets/images/movie8.png";
+import movie4 form "../assets/images/movie6.png";
+import movie5 form "../assets/images/movie6.png";
+import movie6 form "../assets/images/movie9.png";
+  
 
 const Profile = () => {
   return (
@@ -19,7 +27,7 @@ const Profile = () => {
         {/* Profile Header */}
         <div className="profile-header">
           <div className="profile-image-container">
-            <img src="/images/profile.jpg" alt="Profile" className="profile-image" />
+            <img src={profile} alt="Profile" className="profile-image" />
             <div className="username">damon1890</div>
           </div>
 
@@ -53,27 +61,27 @@ const Profile = () => {
           <div className="favorites-label">MY FAVORITES</div>
           <div className="favorites-container">
             <div className="movie">
-              <img src="/images/movie2.png" alt="Venom" className="movie-image" />
+              <img src={movie1} alt="Venom" className="movie-image" />
               <div className="stars">⭐⭐⭐⭐⭐</div>
             </div>
             <div className="movie">
-              <img src="/images/movie7.png" alt="The A.I. Dharma Story" className="movie-image" />
+              <img src={movie2} alt="The A.I. Dharma Story" className="movie-image" />
               <div className="stars">⭐⭐⭐⭐</div>
             </div>
             <div className="movie">
-              <img src="/images/movie4.png" alt="Tigra" className="movie-image" />
+              <img src={movie3} alt="Tigra" className="movie-image" />
               <div className="stars">⭐⭐⭐⭐</div>
             </div>
             <div className="movie">
-              <img src="/images/movie8.png" alt="Estree2" className="movie-image" />
+              <img src={movie4} alt="Estree2" className="movie-image" />
               <div className="stars">⭐⭐⭐⭐⭐</div>
             </div>
             <div className="movie">
-              <img src="/images/movie6.png" alt="Wild Robot" className="movie-image" />
+              <img src={movie5} alt="Wild Robot" className="movie-image" />
               <div className="stars">⭐⭐⭐⭐⭐</div>
             </div>
             <div className="movie">
-              <img src="/images/movie9.png" alt="Singhnam Again" className="movie-image" />
+              <img src={movie6} alt="Singhnam Again" className="movie-image" />
               <div className="stars">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
